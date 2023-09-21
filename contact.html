@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+  CSC309 Assignment 1
+  
+  University of Toronto
+  Fall 2023
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC309 A1 - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar"> 
+      <ul>
+        <li><a href="index.html" class="inactive-page">Home</a></li>
+        <li><a href="about.html" class="inactive-page">About</a></li>
+        <li><a href="contact.html" class="active-page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <div class="main-content">
+
+    <img src="linkedinheadshot.jpg" class="headshot"/>
+    <h1>Nicholas Macasaet</h1>
+    <h3>
+      <a href="mailto: nicholas.macasaet@mail.utoronto.ca?subject=Bug Found &body=I found the following bug on your website">nicholas.macasaet@mail.utoronto.ca
+      </a>
+    </h3>
+
+    <form method="post" action="https://postman-echo.com/post">
+      <div class="form-info">
+      <label for="email">Enter your email: </label>
+      <input id="email" type="email" required/>
+      </div>
+      
+      <div class="form-info">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" type="textarea" required placeholder="Enter your feedback here...."></textarea>
+        <!--<input id="feedback" type="textarea" required placeholder="Enter your feedback here"
+        /> -->
+      </div>
+      
+      <div class="form-info"> 
+        <label for="attachment">Attachment:</label>
+        <input id="attachment" type="file" required/>
+      </div>
+       
+      <div class="form-info special">
+        <!-- fix this later-->
+        <div class="qurikybutton">
+          <input id="agreebox" type="checkbox" class="agreebox" required />
+        </div>
+        
+        <label for="agreebox" class="agreeboxfield">You agree to receive emails from me</label>
+      </div>
+
+      <button class="feedback-button" type="submit">Send Feedback</button>
+    </form>
+
+  </div>
+
+  <footer>
+    <p>Copyright 2023 by macasae4.</p>
+  </footer>
+
+</main>
+</body>
+</html>

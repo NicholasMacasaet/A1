@@ -1,0 +1,232 @@
+/*
+ * style.css
+ *
+ * CSC309 Assignment 1
+ * 
+ * University of Toronto
+ * Fall 2023
+ *
+ */
+
+ html{
+    font-family: 'Times New Roman';
+ }
+
+ body{
+    background-color:#BBBBBB ;
+  
+ }
+
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /*fix the margin to the top of the page*/
+    background-color: #333333;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+ }
+/* set the basics for the header */
+ .navbar{
+    height: 75px;
+    width: 300px;
+ }
+/*set the basics for the navbar */
+
+/*I had done this kind of stuff with a nav bar before, so I'm just re
+using my past code*/
+ .navbar > ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    padding-inline-start: 0; 
+ }
+
+ nav > ul > li {
+    color: #00B8D4;
+    display: block;
+    
+ }
+
+ li >a {
+    padding: 2rem;
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.3rem;
+ }
+
+ nav > ul > li >a:hover {
+    color:white;
+    cursor:pointer;
+ }
+/*different styles based on which page is active */
+ .inactive-page{
+    color:#00b8d4;
+ }
+ .active-page{
+    color: #b2f5ea;
+    font-style:bold;
+ }
+
+
+ .main-content{
+    padding-top: 128px;
+    padding-bottom:128px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    flex:wrap;
+ }
+
+.headshot{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+}
+/*quite convienient that I already had a linkedin headshot hehe*/
+
+footer{
+    background-color: #333333;
+    height:3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+   /*make the margiin fixed*/
+}
+
+button{
+    color: #00B8D4;
+    border: 2px solid #00B8D4;
+    width: 100px;
+    height: 40px;
+}
+
+h3{
+    font-weight: normal;
+}
+
+button:hover{
+    background-color:#00B8D4;
+    border: 2px solid white;
+    color: white;
+}
+
+
+footer > p{
+    color: white;
+    text-align: center;
+}
+
+.collapse-wrapper{
+   width: 500px;
+   height: 200px;
+   border: 1px solid black;
+   display: inline-block;
+   box-sizing: border-box;
+   align-items:center;
+}
+
+.collapse-button{
+   width: 50%;
+   height: 30%;
+}
+
+#button-label, #class-list{
+   display: block;
+   width: 40%;
+}
+
+#class-list li{
+   text-align: left;
+}
+
+#button-label{
+   background-color: aqua;
+}
+/*hide div content when not checked*/
+#class-list{
+   background-color: #00B8D4;
+   display: none;
+}
+
+#collapse-button:checked + #class-list{
+   display: block;
+}
+
+
+form{
+   width: 75vw;
+   display: inline-block;
+   /* border: 2px solid black; */
+   text-align: left;
+   box-sizing: border-box;
+   height: 20vh;
+}
+
+.form-info label, .form-info input{
+   display: inline-block;
+}
+
+.form-info{
+   /* border: 2px solid blue; */
+   display:flex;
+   /* border: 1px solid black; */
+}
+.form-info label{
+   width: 30%;
+   text-align:right;
+   /* border: 1px solid black; */
+   font-weight: bold;
+   margin-right:5px;
+}
+
+.form-info input, textarea{
+   width: 50%;
+   height: 20px;
+   text-align:left;
+   margin: 5px 0 5px 0;
+}
+/* .quirkybutton{
+   border:2px #00B8D4;
+   width:30%;
+} */
+.form-info .qurikybutton{
+   border:2px #00B8D4;
+   width: 30%;
+   display:flex;
+   justify-content: right;
+   
+}
+.form-info .agreeboxfield{
+   text-align: left;
+   margin-right:30%;
+   /* border: 1px solid blue */
+}
+
+.form-info #attachment{
+   border: 1px solid white;
+   padding: 3px;
+  
+}
+
+/* .special{
+   border: 1px solid black
+} */
+.form-info textarea{
+   height: 100px;
+}
+
+.feedback-button{
+   width: 150px;
+   height: 30px;
+   margin-left: 30%;
+}
+
+
+
